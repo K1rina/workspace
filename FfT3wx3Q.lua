@@ -36,7 +36,7 @@ if Yuuki == 0088 then -- test placeid
                                 elseif Yuuki == 5780309044 then
                                     TCaU = true
                             else
-                                local LoaderReal = 'https://github.com/Aqsyn/workspace/main/'
+                                local LoaderReal = 'https://raw.githubusercontent.com/Aqsyn/workspace/main/'
                                 loadstring(game:HttpGet(LoaderReal .. 'wrong2.lua'))()
                                 print("loadstring done",Yuuki)
                                 --[[
@@ -46,7 +46,7 @@ if Yuuki == 0088 then -- test placeid
                                 --]]
                             end
                             warn("PlaceId",Yuuki)
-                            local LoaderReal = 'https://github.com/Aqsyn/workspace/main/'
+                            local LoaderReal = 'https://raw.githubusercontent.com/Aqsyn/workspace/main/'
                             if DcZcGjr2 then
                                 loadstring(game:HttpGet(LoaderReal .. 'Fall.lua'))()
                             end

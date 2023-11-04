@@ -31,7 +31,7 @@ Tab:AddToggle({
         end
     })
     Tab:AddToggle({
-        Name = "Bring Arrow",
+        Name = "Bring Rokakaka",
         Default = false,
         Callback = function(v)
             Rokakaka = v
@@ -50,40 +50,21 @@ Tab:AddToggle({
             end
         })
         Tab:AddToggle({
-            Name = "Bring Rokakaka",
+            Name = "Bring SamuraiDiary",
             Default = false,
             Callback = function(v)
-                Rokakaka = v
-                while Rokakaka do wait()
+                Samurai = v
+                while Samurai do wait()
                     pcall(function()
-                    local plrhead = game.Players.LocalPlayer.Character.Head
-                        for i,v in pairs(workspace["Rokakaka Fruit"]:GetDescendants()) do
-                                if v.Name == "TouchInterest" and v.Parent then
-                                    firetouchinterest(plrhead, v.Parent, 0)
-                                    wait(0.01)
-                                    firetouchinterest(plrhead, v.Parent, 1)
-                                end
+                        local plrhead = game.Players.LocalPlayer.Character.Head
+                        for i,v in pairs(workspace["Samurai Diary"]:GetDescendants()) do
+                            if v.Name == "TouchInterest" and v.Parent then
+                                firetouchinterest(plrhead, v.Parent, 0)
+                                wait(0.01)
+                                firetouchinterest(plrhead, v.Parent, 1)
                             end
-                        end)
-                    end
+                        end
+                    end)
                 end
-            })
-            Tab:AddToggle({
-                Name = "Bring SamuraiDiary",
-                Default = false,
-                Callback = function(v)
-                    Samurai = v
-                    while Samurai do wait()
-                        pcall(function()
-                            local plrhead = game.Players.LocalPlayer.Character.Head
-                            for i,v in pairs(workspace["Samurai Diary"]:GetDescendants()) do
-                                if v.Name == "TouchInterest" and v.Parent then
-                                    firetouchinterest(plrhead, v.Parent, 0)
-                                    wait(0.01)
-                                    firetouchinterest(plrhead, v.Parent, 1)
-                                end
-                            end
-                        end)
-                    end
-                end
-            })
+            end
+        })

@@ -458,8 +458,9 @@ Tab:AddToggle({
                             end
                         end
                     end)
-                end  
-            })
+                end
+            end
+        })
             local Tab = Window:MakeTab({
                 Name = "Tab 3",
                 Icon = "rbxassetid://4483345998",

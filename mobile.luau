@@ -574,7 +574,8 @@ Tab:AddToggle({
                                         end
                                     end
                                 end
-                            })
+                            end
+                        })
                             Tab:AddButton({
                                 Name = "UnlockFPS",
                                 Callback = function()

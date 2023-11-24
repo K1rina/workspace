@@ -40,8 +40,8 @@ local Toggle = Tab:CreateToggle({
     CurrentValue = false,
     Flag = "Toggle1",
     Callback = function(v)
-        Call01 = v
-        Call01 while wait() do
+        ttt = v
+        while ttt do wait()
             TP(CFrame.new(-26.2376919, 4006.09082, -23.0878887, -0.229178801, 8.07469789e-08, 0.973384321, -2.08935127e-08, 1, -8.7874156e-08, -0.973384321, -4.04763121e-08, -0.229178801))
         end
     end,

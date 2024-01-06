@@ -1,1 +1,1 @@
-game.Players.LocalPlayer:Kick("broken script")
+game.Players.LocalPlayer:Kick("broken script\n")
